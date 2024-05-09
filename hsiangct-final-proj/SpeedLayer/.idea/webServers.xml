@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="bc3ce1ce-22c0-44cd-a51d-7c695adfff3b" name="hsiangct_final">
+        <fileTransfer rootFolder="/home/hadoop" accessType="SFTP" host="ec2-3-131-137-149.us-east-2.compute.amazonaws.com" port="22" sshConfigId="45598ee8-bab2-46de-88b6-90254529a64f" sshConfig="hadoop@ec2-3-131-137-149.us-east-2.compute.amazonaws.com:22 key" keyPair="true">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

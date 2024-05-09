@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Submit Player Stats</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding-top: 50px;
+        }
+
+        .form-container {
+            width: 300px;
+            margin: 0 auto;
+        }
+
+        .form-field {
+            margin-bottom: 10px;
+        }
+
+        .form-field label {
+            margin-right: 10px;
+        }
+
+        .form-field input {
+            padding: 5px;
+            margin-left: 10px;
+        }
+
+        .submit-button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        .submit-button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+<div class="form-container">
+    <h2>Submit Player Stats</h2>
+    <form action="/submit-stat.html" method="post">
+        <div class="form-field">
+            <label for="player_name">Player_name:</label>
+            <input type="text" id="player_name" name="player_name">
+        </div>
+        <div class="form-field">
+            <label for="season">Season:</label>
+            <input type="text" id="season" name="season">
+        </div>
+
+        <div class="form-field">
+            <label for="age">Age:</label>
+            <input type="text" id="age" name="age">
+        </div>
+
+        <div class="form-field">
+            <label for="points">Points:</label>
+            <input type="text" id="points" name="points">
+        </div>
+
+        <div class="form-field">
+            <label for="rebounds">Rebounds:</label>
+            <input type="text" id="rebounds" name="rebounds">
+        </div>
+
+        <div class="form-field">
+            <label for="assists">Assists:</label>
+            <input type="text" id="assists" name="assists">
+        </div>
+
+        <div class="form-field">
+            <label for="player_height">Player Height:</label>
+            <input type="text" id="player_height" name="player_height">
+        </div>
+
+        <div class="form-field">
+            <label for="player_weight">Player Weight:</label>
+            <input type="text" id="player_weight" name="player_weight">
+        </div>
+
+        <div class="form-field">
+            <label for="team_abbreviation">Team Abbreviation:</label>
+            <input type="text" id="team_abbreviation" name="team_abbreviation">
+        </div>
+
+        <div class="form-field">
+            <label for="college">College:</label>
+            <input type="text" id="college" name="college">
+        </div>
+
+        <div class="form-field">
+            <label for="country">Country:</label>
+            <input type="text" id="country" name="country">
+        </div>
+
+        <div class="form-field">
+            <label for="draft_year">Draft Year:</label>
+            <input type="text" id="draft_year" name="draft_year">
+        </div>
+
+        <div class="form-field">
+            <label for="draft_round">Draft Round:</label>
+            <input type="text" id="draft_round" name="draft_round">
+        </div>
+
+        <div class="form-field">
+            <label for="draft_number">Draft Number:</label>
+            <input type="text" id="draft_number" name="draft_number">
+        </div>
+
+        <div class="form-field">
+            <label for="gp">Games Played:</label>
+            <input type="text" id="gp" name="gp">
+        </div>
+
+        <div class="form-field">
+            <label for="net_rating">Net Rating:</label>
+            <input type="text" id="net_rating" name="net_rating">
+        </div>
+
+        <div class="form-field">
+            <label for="oreb_pct">Offensive Rebound Percentage:</label>
+            <input type="text" id="oreb_pct" name="oreb_pct">
+        </div>
+
+        <div class="form-field">
+            <label for="dreb_pct">Defensive Rebound Percentage:</label>
+            <input type="text" id="dreb_pct" name="dreb_pct">
+        </div>
+
+        <div class="form-field">
+            <label for="usg_pct">Usage Percentage:</label>
+            <input type="text" id="usg_pct" name="usg_pct">
+        </div>
+
+        <div class="form-field">
+            <label for="ts_pct">True Shooting Percentage:</label>
+            <input type="text" id="ts_pct" name="ts_pct">
+        </div>
+
+        <div class="form-field">
+            <label for="ast_pct">Assist Percentage:</label>
+            <input type="text" id="ast_pct" name="ast_pct">
+        </div>
+
+        <input type="submit" value="Submit" class="submit-button">
+    </form>
+</div>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html>
+  <head>
+    <title>Player Season Stats</title>
+    <link type="text/css" rel="stylesheet" href="table.css" />
+    <style>
+      .CSS_Table_Example th {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px;
+        text-align: left;
+      }
+
+      .CSS_Table_Example td {
+        background-color: #f2f2f2;
+        color: #333;
+        padding: 8px;
+        text-align: left;
+      }
+    </style>
+  </head>
+  <body>
+    <div style="margin-left:225px;margin-right:auto;display:inline-block;box-shadow: 10px 10px 5px #888888;border:1px solid #000000;-moz-border-radius-bottomleft:9px;-webkit-border-bottom-left-radius:9px;border-bottom-left-radius:9px;-moz-border-radius-bottomright:9px;-webkit-border-bottom-right-radius:9px;border-bottom-right-radius:9px;-moz-border-radius-topright:9px;-webkit-border-top-right-radius:9px;border-top-right-radius:9px;-moz-border-radius-topleft:9px;-webkit-border-top-left-radius:9px;border-top-left-radius:9px;background:white">
+      <h1>Seasonal Stats for {{player_name}}</h1>
+    </div>
+    <p style="margin-bottom:10px">
+      <table class="CSS_Table_Example" style="width:100%;margin:auto;">
+        <thead>
+          <tr>
+            <th>Season</th>
+                    <th>Age</th>
+                    <th>Points</th>
+                    <th>Rebounds</th>
+                    <th>Assists</th>
+                    <th>Player Height</th>
+                    <th>Player Weight</th>
+                    <th>Team</th>
+                    <th>College</th>
+                    <th>Country</th>
+                    <th>Draft Year</th>
+                    <th>Draft Round</th>
+                    <th>Draft Number</th>
+                    <th>Games Played</th>
+                    <th>Net Rating</th>
+                    <th>OReb Pct</th>
+                    <th>DReb Pct</th>
+                    <th>USG Pct</th>
+                    <th>TS Pct</th>
+                    <th>AST Pct</th>
+          </tr>
+        </thead>
+        <tbody>
+          {{#season_data}}
+          <tr>
+            <td>{{season}}</td>
+                    <td>{{age}}</td>
+                    <td>{{pts}}</td>
+                    <td>{{reb}}</td>
+                    <td>{{ast}}</td>
+                    <td>{{player_height}}</td>
+                    <td>{{player_weight}}</td>
+                    <td>{{team_abbreviation}}</td>
+                    <td>{{college}}</td>
+                    <td>{{country}}</td>
+                    <td>{{draft_year}}</td>
+                    <td>{{draft_round}}</td>
+                    <td>{{draft_number}}</td>
+                    <td>{{gp}}</td>
+                    <td>{{net_rating}}</td>
+                    <td>{{oreb_pct}}</td>
+                    <td>{{dreb_pct}}</td>
+                    <td>{{usg_pct}}</td>
+                    <td>{{ts_pct}}</td>
+                    <td>{{ast_pct}}</td>
+          </tr>
+          {{/season_data}}
+        </tbody>
+      </table>
+    </p>
+  </body>
+</html>
